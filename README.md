@@ -20,8 +20,10 @@ dependency download faster when building Rust project.
    source env/bin/activate
    pip install -r requirements.txt
    ```
-3. Run this program: `python app.py`
-4. (Optional)Serve a mirror site:
+3. Adjust the proxies defined at the top of app.py to match your network setup
+   (if you don't connect through a proxy, remove the proxies defined here)
+4. Run this program: `python app.py`
+5. (Optional)Serve a mirror site:
    ```
    cd crates
    python -m http.server 8000
